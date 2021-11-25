@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app='MsgApp'>
+<head>
+ <meta charset="utf-8">
+ <script src="angular.min.js"></script>
+ <script src="app.js"></script>
+ <style> body { font-size: 2em; }</style>
+ <title>Expressions and Interpolation</title>
+</head>
+<body>
+
+<center><img src="logo.png" width="150" height="150"></center>
+<body style="background-color:#F6E8CF;">
+<center><h3 style="color:#278636; font-family:Garamond, serif;"> ACTIVITY 4: Expressions and Interpolation</h1></center>
+
+
+  <center><div ng-controller='MsgController'>
+  <i><b>{{ name }} has something to show you... <br></b></i>
+   {{ sayMessage() }}
+
+  <div>
+    <button ng-click="look()">click to see the edited look</button><br>
+    <img ng-src="images/lyzeth_{{stateOfBeing}}.png">
+  </div>
+  </div></center>
+
+</body>
+</html>
